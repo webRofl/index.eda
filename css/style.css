@@ -249,7 +249,7 @@ body {
   right: 0;
   top: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/img/desk.png) no-repeat center / cover;
+    url(../img/desk.png) no-repeat center / cover;
   float: left;
   width: 570px;
 }
