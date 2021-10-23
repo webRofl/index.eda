@@ -89,3 +89,167 @@ body {
   padding: 5px;
   border-radius: 50%;
 }
+
+.slide {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.slide-text-light {
+  background: grey;
+  color: white;
+}
+
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+}
+
+.slide-content {
+  position: relative;
+  max-width: 400px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  background: #f47322;
+  color: white;
+}
+
+.button-default {
+  background: white;
+  color: black;
+  max-width: 232px;
+  text-align: center;
+  max-height: 49px;
+}
+
+.button {
+  padding: 12px 50px;
+  border-radius: 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.slide-summer {
+  background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.promo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px;
+  max-width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(.png);
+}
+
+.card-text-light {
+  color: white;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+
+.card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 200px;
+}
+
+.card-price {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+  margin-top: 72px;
+}
+
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.sweet-basket {
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/sweet-basket.png) no-repeat center / cover;
+  float: left;
+  width: 570px;
+}
+
+.desk {
+  margin-left: 54px;
+  right: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/img/desk.png) no-repeat center / cover;
+  float: left;
+  width: 570px;
+}
